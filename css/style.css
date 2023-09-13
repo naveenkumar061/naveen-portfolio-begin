@@ -1,59 +1,143 @@
-/* 
-============
-Font Family
-============
-*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
-/* 
-=================
-Global Variables
-=================
- */
+:root {
+  --primary-font-family: "Open Sans", sans-serif;
+  --special-font-family: "Roboto", sans-serif;
+  --white: rgb(255, 255, 255);
+  --color-grey-1: hsl(0, 0%, 95%);
+  --color-grey-2: hsl(0, 0%, 85%);
+  --color-grey-3: hsl(0, 0%, 75%);
+  --color-grey-4: hsl(0, 0%, 65%);
+  --color-grey-5: hsl(0, 0%, 55%);
+  --color-grey-6: hsl(0, 0%, 45%);
+  --color-grey-7: hsl(0, 0%, 35%);
+  --color-grey-8: hsl(0, 0%, 25%);
+  --color-grey-9: hsl(0, 0%, 15%);
+  --color-grey-10: hsl(0, 0%, 5%);
+  --color-primary-1: hsl(39, 100%, 95%);
+  --color-primary-2: hsl(39, 100%, 85%);
+  --color-primary-3: hsl(39, 100%, 75%);
+  --color-primary-4: hsl(39, 100%, 65%);
+  --color-primary-5: hsl(39, 100%, 55%);
+  --color-primary-6: hsl(39, 100%, 45%);
+  --color-primary-7: hsl(39, 100%, 35%);
+  --color-primary-8: hsl(39, 100%, 25%);
+  --color-primary-9: hsl(39, 100%, 15%);
+  --color-primary-10: hsl(39, 100%, 5%);
+  --red: rgb(200, 10, 10);
+  --red-hover: rgb(255, 0, 0);
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+}
 
-/* 
-==============
-Common Styles
-==============
-*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
 
-/* 
-===============
-Global Classes
-===============
-*/
+.nav-logo {
+  width: 5rem;
+  border: 1px solid var(--color-primary-5);
+  border-radius: 5px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-primary-1);
+}
+.nav-btn {
+  display: none;
+}
+.nav-links {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.nav-links a {
+  color: var(--color-grey-10);
+  font-family: var(--special-font-family);
+}
+.nav-links a:hover {
+  color: var(--color-primary-5);
+}
+@media (max-width: 850px) {
+  .nav-logo {
+    height: 50px;
+    width: 75px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-btn {
+    display: block;
+    border: transparent;
+    background-color: transparent;
+    color: var(--color-primary-5);
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+}
 
-/* 
-=========
-navbar
-=========
-*/
-
-/* 
-=========
-sidebar
-=========
-*/
-
-/* 
-=========
-header
-=========
-*/
-
-/* 
-=========
-about
-=========
-*/
-
-/* 
-=========
-connect
-=========
-*/
-
-/* 
-=========
-footer
-=========
-*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-grey-1);
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+}
+.show-sidebar {
+  transform: translateX(0);
+}
+.close-btn {
+  transform: translateX(600px);
+  border: transparent;
+  background: transparent;
+  color: var(--red);
+  font-size: 3rem;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: var(--red-hover);
+}
+.sidebar-links {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 9rem 0;
+}
+.sidebar-links a {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: var(--special-font-family);
+  color: var(--color-grey-5);
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.sidebar-links a:hover {
+  color: var(--color-primary-5);
+}
