@@ -107,13 +107,17 @@ img {
   z-index: 4;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transform: translateX(-100%);
 }
 .show-sidebar {
   transform: translateX(0);
 }
 .close-btn {
-  transform: translateX(600px);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
   border: transparent;
   background: transparent;
   color: var(--red);
@@ -127,7 +131,6 @@ img {
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 9rem 0;
 }
 .sidebar-links a {
   font-size: 2rem;
