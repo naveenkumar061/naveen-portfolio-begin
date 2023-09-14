@@ -79,7 +79,7 @@ img {
 .nav-links a:hover {
   color: var(--color-primary-5);
 }
-@media (max-width: 850px) {
+@media (max-width: 950px) {
   .nav-logo {
     height: 50px;
     width: 75px;
@@ -143,4 +143,74 @@ img {
 }
 .sidebar-links a:hover {
   color: var(--color-primary-5);
+}
+.dev-pic img {
+  border-radius: 50%;
+  height: 380px;
+  width: 370px;
+  border: 0.25rem solid var(--color-primary-5);
+}
+.header {
+  background-color: var(--color-primary-1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem;
+  height: calc(100vh - 72px);
+}
+.info-container {
+  font-family: var(--primary-font-family);
+  font-size: 1.5rem;
+}
+.hello p span {
+  font-family: var(--special-font-family);
+  font-weight: bolder;
+  color: var(--color-primary-5);
+}
+.about {
+  padding-bottom: 1rem;
+  font-family: var(--special-font-family);
+}
+.more-about {
+  font-size: 1rem;
+  max-width: 75%;
+  padding-bottom: 1rem;
+}
+.buttons button {
+  padding: 0.25rem 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--color-primary-5);
+  border-radius: 10px;
+  border: none;
+  font-size: 0.875rem;
+}
+.buttons button a {
+  color: var(--white);
+}
+.buttons button:hover a {
+  color: var(--color-primary-5);
+}
+.buttons button:hover {
+  background-color: var(--color-primary-8);
+}
+@media (max-width: 950px) {
+  .header {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .info-container {
+    text-align: center;
+  }
+  .more-about {
+    max-width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .dev-pic img {
+    height: 210px;
+    width: 200px;
+  }
+  .info-container {
+    font-size: 1rem;
+  }
 }
