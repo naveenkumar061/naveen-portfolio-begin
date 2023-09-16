@@ -1,0 +1,17 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.73989868164062 53.533343505859364" width="240.73989868164062" height="53.533343505859364">
+  <!-- svg-source:excalidraw -->
+  
+  <defs>
+    <style class="style-fonts">
+      @font-face {
+        font-family: "Virgil";
+        src: url("https://excalidraw.com/Virgil.woff2");
+      }
+      @font-face {
+        font-family: "Cascadia";
+        src: url("https://excalidraw.com/Cascadia.woff2");
+      }
+    </style>
+    
+  </defs>
+  <g transform="translate(129.62271118164062 11.333343505859375) rotate(0 50.55859375 16.099999999999994)"><text x="50.55859375" y="0" font-family="Helvetica, Segoe UI Emoji" font-size="28px" fill="#f08c00" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">KUMAR</text></g><g transform="translate(10 10) rotate(0 56.533203125 16.099999999999994)"><text x="56.533203125" y="0" font-family="Helvetica, Segoe UI Emoji" font-size="28px" fill="#1e1e1e" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">NAVEEN</text></g></svg>
